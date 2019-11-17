@@ -4997,7 +4997,7 @@ $wpdb->update(
 
 
 	),
-	array( 'nguser_id' => $txtUserID ),
+	array( 'nguser_id' => $txtUserID )
 
 
 );
