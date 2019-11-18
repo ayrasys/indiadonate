@@ -1,4 +1,66 @@
 <?php
+   /*
+   Plugin Name: NGO Profile
+   Plugin URI: https://techbrise.com/
+   description:A plugin to create NGO profiles and send it for verifications.
+   Version: 1.0
+   Author: TechBrise
+   License: GPL2
+   */
+   // $adm_is = get_current_user_id();
+ //  $current_user = wp_get_current_user();
+//   print_r($current_user); die();
+  // echo $current_user->ID;
+  // echo get_current_user_id() ;die();
+   if(isset($_POST['savedata'])){
+	   global $wpdb;
+	 echo $daaata =get_current_user_id() ;
+	print_r($daaata);
+	//echo '<pre>'; print_r($_POST);echo '</pre>';
+		$j = sizeof($_POST['txtname']);
+	//echo get_current_user_id();
+	//die();
+	 for($i=0; $i<$j;$i++){
+		 $uid ='314';
+		//echo '<pre>'; print_r($data);echo '</pre>';
+
+		echo $name = $_POST['txtname'][$i];
+	   $desig = $_POST['desig'][$i];
+	   $tenure = $_POST['tenure'][$i];
+	   $occup = $_POST['occup'][$i];
+	   $relation = $_POST['relation'][$i];
+
+	   $result = $wpdb->insert( 'wp_board_member',
+
+         array(
+              'id' => '',
+              'user_id' => $uid,
+			  'name' => $name,
+			  'designation' => $desig,
+			  'tenure' => $tenure,
+			  'occupation' => $occup,
+			  'relationship' => $relation
+              ),
+         array(
+              '%d',
+              '%d',
+			  '%s',
+			  '%s',
+			  '%s',
+			  '%s',
+			  '%s',
+      )
+
+    );
+	 }
+	 //die();
+
+
+
+   }
+
+?>
+<?php
 // Disable to create single table for every Ngo websites.
 
 $adm_is = get_current_user_id();
