@@ -204,7 +204,7 @@
                            'form_one_approved' =>  1, // integer (number)
                            'approval_on' =>  date('Y-m-d H:i:s')  // integer (number)
           ),
-          array( 'nguser_id' => $idsa ),
+          array( 'nguser_id' => $idsa )
 
       );
 

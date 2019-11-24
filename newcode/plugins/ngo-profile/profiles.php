@@ -286,7 +286,7 @@ function tbs_edit_profiles(){
 
         ),
         array(
-            'nguser_id' => $id,
+            'nguser_id' => $id
              )
     );
    if( $success ){
@@ -3873,7 +3873,7 @@ $(document).ready(function(){
 
                     ),
                     array(
-                      'nguser_id' => $ng_id,
+                      'nguser_id' => $ng_id
                     )
                   );
             if( $success ){
@@ -4940,7 +4940,7 @@ function ajdataNGOReject(){
 
                     ),
                     array(
-                      'nguser_id' => $txtUserID,
+                      'nguser_id' => $txtUserID
                     )
                   );
 
@@ -5020,7 +5020,7 @@ $wpdb->update(
 
 
 	),
-	array( 'nguser_id' => $txtUserID ),
+	array( 'nguser_id' => $txtUserID )
 
 
 );
@@ -5071,7 +5071,7 @@ $wpdb->update(
 
 
 	),
-	array( 'nguser_id' => $txtUserID ),
+	array( 'nguser_id' => $txtUserID )
 
 
 );
