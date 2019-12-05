@@ -83,7 +83,7 @@ if('POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['submit_form_narative'])
           		'project_name' => $PROJECTNAME,
           		'project_detail' => $PROJECTDETAIL,
           		'project_attchment' => $attachments,
-          	),
+          	)
 
           );
 

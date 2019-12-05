@@ -88,7 +88,7 @@ if('POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['submit_form_support']))
           		'subject' => $txtSubject,
           		'message' => $txtMessage,
           		'attach_id' => $attachments,
-          	),
+          	)
 
           );
 

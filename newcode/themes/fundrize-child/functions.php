@@ -39,8 +39,8 @@ if ( ! is_admin() ) {
     		'zip' => $zip,
     		'latitude' => $latitude,
     		'longitude' => $longitude,
-    		'country_flag' => $country_flag,
-    	),
+    		'country_flag' => $country_flag
+    	)
     );
   }
 

@@ -79,7 +79,7 @@ if('POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST['submit_form_support_rep
           		'admin_remarks' => $txtMessageReplay,
 
           	),
-            array( 'id' => $rowID ), 
+            array( 'id' => $rowID )
 
           );
 
